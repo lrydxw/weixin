@@ -1,0 +1,7 @@
+<view class="user-box">用户中心
+    <view bindtap="changeImg">
+    <image src="{{userImg}}" ></image>
+    <view>点击更换头像</view>
+    </view>
+    <view>用户名：{{userID}}</view>
+</view>

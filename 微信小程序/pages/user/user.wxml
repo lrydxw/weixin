@@ -1,0 +1,16 @@
+
+<view class="denglu" wx:if="{{isLogin}}">
+   <navigator bindtap="login">
+      登录
+     </navigator>
+     <navigator url="./../register/register">
+      注册
+     </navigator>
+</view>
+<view class="user-box"  wx:else>用户中心
+    <view bindtap="changeImg">
+    <image src="{{userImg}}" ></image>
+    <view>点击更换头像</view>
+    </view>
+    <view>用户名：{{userID}}</view>
+</view>

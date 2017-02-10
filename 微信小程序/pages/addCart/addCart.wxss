@@ -1,0 +1,27 @@
+image{
+    width:100px;
+    height:100px;
+}
+.goodsName{
+  display: -webkit-box;
+    overflow: hidden;
+    white-space: normal !important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+}
+
+.view view:nth-child(2){
+    float:right;
+width:70%;
+margin-top:20px;
+background: red;
+}
+.view view:nth-child(2) {
+    float:right;
+
+}
+.view view:nth-child(1){
+    float:left;
+}

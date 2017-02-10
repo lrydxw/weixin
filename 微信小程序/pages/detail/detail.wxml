@@ -1,0 +1,14 @@
+<swiper class="homeList" indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" data-goodsID="{{item.goodsID}}" data-goodsName="{{item.goodsName}}" interval="{{interval}}" circular="{{circular}}" duration="{{duration}}" >
+         <swiper-item wx:for="{{bannerList}}" wx:key="{{index}}">
+            <image src="{{item}}"></image>
+      </swiper-item>
+</swiper>    
+<view class="goodsName">商品名称:{{goodsName}}</view>
+
+<view class="price">￥{{price}}</view>
+<view class="footerList">
+      <view bindtap="shoucang">收藏</view>
+      <view bindtap="addcart" wx:for="{{proList}}" data-goodsID="{{item.goodsID}}" data-number="{{number}}" data-goodsName="{{item.goodsName}}" >加入购物车</view>
+      <view bindtap="gocart" wx:for="{{proList}}" data-goodsID="{{item.goodsID}}" data-number="{{number}}" data-goodsName="{{item.goodsName}}" url="./../addCart/addCart" >查看购物车</view>
+</view>

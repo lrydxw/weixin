@@ -1,0 +1,36 @@
+<view bindtap="go">拍照{{test}}</view>
+<view bindtap="video">音频{{test}}</view>
+<view bindtap="music">音乐{{test}}</view>
+<audio  src="{{src}}" id="myAudio" ></audio>
+
+<button type="primary" bindtap="audioPlay">播放</button>
+<button type="primary" bindtap="audioPause">暂停</button>
+<button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
+<button type="primary" bindtap="audioStart">回到开头</button>
+<view wx:for="{{arr}}">{{index}}----{{item}}</view>
+<!--<view wx:for="{{arr}}" wx:for-index="current" wx:for-item="user">{{current}}----</view>
+<view wx:for="{{arr}}" wx:for-index="current" wx:for-item="user">{{user}}</view>-->
+<view wx:for="{{arr}}" wx:for-index="current" wx:for-item="user">
+     <view>{{current}}</view>
+      <view>{{user}}</view>
+</view>
+<view wx:for="{{users}}" >{{item.name}}----{{item.age}}</view>
+<view wx:if="{{type=='a'}}">a</view>
+<view wx:elif="{{type=='b'}}">b</view>
+<view wx:else="{{type=='c'}}">c</view>
+<button bindtap="changeA">测试条件转换</button>
+<!--<button bindtap="changeB">变为b</button>
+<button bindtap="changeC">变为c</button>-->
+<template name="staffName">
+  <view>
+    FirstName: {{firstName}}, LastName: {{lastName}}
+  </view>
+</template>
+
+<template is="staffName" data="{{...staffA}}"></template>
+<template is="staffName" data="{{...staffB}}"></template>
+<template is="staffName" data="{{...staffC}}"></template>
+
+<checkbox checked="{{isChecked}}">漩涡</checkbox>
+<view wx:if="{{isShow?true:false}}">hahahahahahahah</view>
+<button bindtap="changeShow">改变</button>

@@ -1,0 +1,12 @@
+.button-hover {
+  background-color: red;
+}
+/** 添加自定义button点击态样式类**/
+.other-button-hover {
+  background-color: blue;
+}
+.exit{
+  width:100%;
+  height:30px;
+  background: #fff;
+}

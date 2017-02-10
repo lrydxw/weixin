@@ -1,0 +1,25 @@
+
+<scroll-view class="kind-left"  scroll-y="true" style="height: 100%;">
+    <ul >
+        <li class="kind-left-li {{index==kindlistIndex?'active':''}}" wx:key="{{index}}" bindtap="kindlist" data-id="{{index}}" wx:for="{{kindtit}}">{{item.title}}</li>
+    </ul>
+</scroll-view>
+    <!--<ul class="kind-right">
+        <li class="kind-right-list" wx:for="{{kindarr}}">
+            <image class="kind-right-list-img" src="{{item.image}}"></image>
+            <text class="kind-right-list-txt">{{item.title}}</text>
+        </li>
+    </ul>-->
+ <scroll-view class="kind-right"  scroll-y="true" style="height: 100%;">   
+    <view >
+        <block>
+            <view>
+                <view class="kind-right-list" wx:key="{{index}}" wx:for="{{listarr}}">
+                    <image class="kind-right-list-img" src="{{item.image}}"/>
+                    <text class="kind-right-list-txt">{{item.title}}</text>
+                </view>
+            </view>
+        </block>
+     
+    </view>
+</scroll-view>    

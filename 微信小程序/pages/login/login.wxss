@@ -1,0 +1,30 @@
+.section{
+    width:100%;
+    margin-top:50px;
+}
+input{
+    margin:20px auto;
+    border:1px solid #666;
+    width:60%;
+    
+}
+button{
+    width:60%;
+}
+#toast{
+    position: fixed;
+    bottom: 2.5rem;
+    width: 80%;
+    left: 10%;
+    height: 2rem;
+    background-color: rgba(0,0,0,0.8);
+   
+    border-radius: 0.5rem;
+    
+}
+#tip{
+        color: #fff;
+        font-size: 1rem;
+        line-height: 2rem;
+        text-align: center;
+    }

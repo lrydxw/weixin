@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/carema/carema",
+    "pages/user/user",
+    "pages/user-success/user-success",
+    "pages/exit/exit",
+    "pages/detail/detail",
+    "pages/cart/cart",
+    "pages/kind/kind",
+    "pages/addCart/addCart",
+    "pages/login/login",
+    "pages/proClass/proClass",
+    "pages/proClass1/proClass1",
+    "pages/proClass2/proClass2",
+    "pages/register/register"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0f91c5",
+    "navigationBarTitleText": "足球圈体验",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "selectedColor":"#0f91c5",
+    "backgroundColor":"#eee",
+    "borderStyle":"white",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/homeing.png"
+    },{
+      "pagePath": "pages/kind/kind",
+      "text": "分类",
+      "iconPath": "images/find.png",
+      "selectedIconPath": "images/finding.png"
+    },{
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "images/user.png",
+      "selectedIconPath": "images/usering.png"
+    },{
+      "pagePath": "pages/exit/exit",
+      "text": "退出",
+      "iconPath": "images/exit.png",
+      "selectedIconPath": "images/exiting.png"
+    }]
+  }
+}

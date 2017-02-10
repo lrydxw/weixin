@@ -1,0 +1,14 @@
+<view id="toast">
+	<view id="tip">状态：{{inputValue}}</view>
+</view>
+<view class="section">
+  <input placeholder="账号" focus="{{focus}}" bindinput="userID" />  
+     <input placeholder="密码" focus="{{focus}}" bindinput="password"/>
+<button bindtap="login"> 登录 </button>
+</view>
+   <navigator url="./../register/register">
+      注册
+     </navigator>
+<view id="toast">
+	<view id="tip">状态：{{inputValue}}</view>
+</view>

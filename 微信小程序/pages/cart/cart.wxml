@@ -1,0 +1,24 @@
+
+购物车
+<!--<li class="cartItem">
+			<div class="deleteItem">
+				删除
+			</div>
+			<div class="itemBox">
+				<div class="itemImg">
+					<img src="../img/pic01.jpg"/>
+				</div>
+				<div class="itemInfo">
+					<p>名称名称名称名称名称名称名称名称名称o称名称名称名称名称</p>
+					<p>T恤</p>
+					<p>单价：￥100</p>
+					<p>数量：1</p>
+				</div>
+			</div>
+		</li>-->
+         <view class="proItem" wx:for="{{proList}}" bindtap="toDetail" data-goodsID="{{item.goodsID}}" data-goodsName="{{item.goodsName}}">
+            <image src="{{item.goodsListImg}}" data-goodsID="{{item.goodsID}}" data-goodsName="{{item.goodsName}}"></image>
+            <view class="p" data-goodsID="{{item.goodsID}}" data-goodsName="{{item.goodsName}}">{{item.goodsName}}</view>
+            <view class="p" data-goodsID="{{item.goodsID}}" data-goodsName="{{item.goodsName}}">￥{{item.price}}</view>
+			<view class="delete p"bindtap="delete" data-goodsID="{{item.goodsID}}" data-number="{{number}}" data-goodsName="{{item.goodsName}}">删除</view>
+        </view>

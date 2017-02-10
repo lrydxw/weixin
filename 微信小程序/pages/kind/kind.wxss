@@ -1,0 +1,55 @@
+
+.kind-left {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  float:left;
+}
+
+.kind-left-li {
+  background: #f6f6f6;
+  border-bottom: 1px solid #ccc;
+  color: #666;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  font-family: "微软雅黑";
+}
+
+.kind-right {
+  flex: 1;
+  display: block;
+
+   overflow-y: scroll;
+   float:right;
+   width:70%;
+}
+.active {
+  background: white;
+  color: skyblue;
+}
+
+.kind-right-list {
+  width: 33%;
+  height: 220rpx;
+  float: left;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.kind-right-list-img {
+  width: 90%;
+  height: 80%;
+}
+
+.kind-right-list-txt {
+  font-size: 30rpx;
+  color: #666;
+}

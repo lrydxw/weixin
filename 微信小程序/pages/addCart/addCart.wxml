@@ -1,0 +1,11 @@
+<view class="view" data-goodsID="{{item.goodsID}}" data-num="{{num}}" data-goodsName="{{item.goodsName}}">
+    <view wx:key="{{index}}" wx:for="{{proList}}" >
+         <image src="{{item.goodsListImg}}" data-goodsID="{{item.goodsID}}" data-goodsName="{{item.goodsName}}"></image>
+    </view>
+    <view>
+        <view class="goodsName">{{goodsName}}</view>
+        
+        <view>数量{{number}}</view>
+        <view>￥{{price}}</view>
+    </view>   
+</view>

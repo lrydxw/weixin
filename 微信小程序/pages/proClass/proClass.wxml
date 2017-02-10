@@ -1,0 +1,42 @@
+<view class="homeBox">
+
+  <ul class="tabList">
+    <li  >
+     <view class="section">
+  <input placeholder="输入商品名称" bindinput="bindKeyInput" value="{{val}}"/>
+</view>
+    </li>
+    <li  >
+     <view class="section">
+ <button bindtap="bindButtonTap" >搜搜</button>
+</view>
+    </li>
+  </ul>
+  <swiper class="homeList" indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" current="{{currentIndex}}" interval="{{interval}}" circular="{{circular}}" duration="{{duration}}" bindchange="changeItem">
+      <swiper-item>
+      
+      <scroll-view class="proList"  scroll-y="true" style="height: 100%;">
+      <block  wx:for="{{proList}}">
+      <navigator url="./../detail/detail?goodsID={{item.goodsID}}&goodsName={{item.goodsName}}">
+      
+        <view class="proItem" >
+            <image src="{{item.goodsListImg}}" ></image>
+            <p  >{{item.goodsName}}</p>
+            <p  >{{item.price}}</p>
+        </view>
+      
+        
+      </navigator>
+        </block>
+      </scroll-view>
+      
+      </swiper-item>
+      <swiper-item>
+      足球生活
+      </swiper-item>
+      <swiper-item>
+        足球美女
+      </swiper-item>
+  </swiper>
+</view>

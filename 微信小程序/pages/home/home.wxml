@@ -1,0 +1,63 @@
+<view class="homeBox" >
+<scroll-view class=""  scroll-y="true" style="height: 100%;">
+<swiper class="banner"indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image class="lunbo" src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<ul class="centerList">
+	<image bindtap="proClass" src="../../images/icon19.png" >分类</image>
+	<image src="../../images/icon5.png"></image>
+	<image src="../../images/icon17.png"></image>
+	<image src="../../images/icon9.png"></image>
+</ul>
+  <ul class="tabList"   scroll-y="true">
+    <li class="{{currentIndex ==0 ? 'active':''}}" bindtap="changeIndex" data-index="0">
+      走 zou
+    </li>
+    <li class="{{currentIndex ==1 ? 'active':''}}" bindtap="changeIndex"  data-index="1">
+      秀 xiu
+    </li>
+    <li class="{{currentIndex ==2 ? 'active':''}}" bindtap="changeIndex"  data-index="2">
+      网 wang
+    </li>
+  </ul>
+  <swiper class="homeList"   style="height: 1300px;"current="{{currentIndex}}" circular="{{circular}}" duration="{{duration}}" bindchange="changeItem">
+      <swiper-item>
+      
+      <view class="proList" style="height: 100%;">
+        <view class="proItem" wx:for="{{proList}}" bindtap="toDetail" data-goodsID="{{item.goodsID}}" data-goodsName="{{item.goodsName}}">
+            <image src="{{item.goodsListImg}}" data-goodsID="{{item.goodsID}}" data-goodsName="{{item.goodsName}}" ></image>
+            <view data-goodsID="{{item.goodsID}}" data-goodsName="{{item.goodsName}}" class="goodsName">{{item.goodsName}}</view>
+            <view data-goodsID="{{item.goodsID}}" data-goodsName="{{item.goodsName}}" class="price">￥{{item.price}}</view>
+        </view>
+   
+      </view>
+      </swiper-item>
+      <swiper-item>
+            <view class="proList" style="height: 100%;">
+        <view class="proItem" wx:for="{{proList}}" bindtap="toDetail" data-goodsID="{{item.goodsID}}" data-goodsName="{{item.goodsName}}">
+            <image src="{{item.goodsListImg}}" data-goodsID="{{item.goodsID}}" data-goodsName="{{item.goodsName}}" ></image>
+            <view data-goodsID="{{item.goodsID}}" data-goodsName="{{item.goodsName}}" class="goodsName">{{item.goodsName}}</view>
+            <view data-goodsID="{{item.goodsID}}" data-goodsName="{{item.goodsName}}" class="price">￥{{item.price}}</view>
+        </view>
+   
+      </view>
+      
+      </swiper-item>
+      <swiper-item>
+              <view class="proList" style="height: 100%;">
+        <view class="proItem" wx:for="{{proList}}" bindtap="toDetail" data-goodsID="{{item.goodsID}}" data-goodsName="{{item.goodsName}}">
+            <image src="{{item.goodsListImg}}" data-goodsID="{{item.goodsID}}" data-goodsName="{{item.goodsName}}" ></image>
+            <view data-goodsID="{{item.goodsID}}" data-goodsName="{{item.goodsName}}" class="goodsName">{{item.goodsName}}</view>
+            <view data-goodsID="{{item.goodsID}}" data-goodsName="{{item.goodsName}}" class="price">￥{{item.price}}</view>
+        </view>
+   
+      </view>
+      </swiper-item>
+  </swiper>
+    </scroll-view>
+</view>

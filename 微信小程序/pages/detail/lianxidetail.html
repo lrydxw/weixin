@@ -1,0 +1,9 @@
+<swiper class="homeList" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}"  interval="{{interval}}" circular="{{circular}}" duration="{{duration}}" >
+	<swiper-item wx:for="{{bannerList}}" wx:key="{{index}}">
+		<image src="{{item}}"></image>
+	</swiper-item>
+</swiper>
+<view>{{goodsName}}</view>
+<view>{{goodsID}}</view>
+<view>数量{{number}}</view>
+<view>￥{{price}}</view>

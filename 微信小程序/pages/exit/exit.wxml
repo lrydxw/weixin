@@ -1,0 +1,1 @@
+<view class="exit" bindtap="exit">退出</view>
